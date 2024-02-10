@@ -23,7 +23,7 @@ card.addEventListener("click", () => {
     card.className = "back";
     body.className = "body-back"
 });
-card.addEventListener("mouseleave", () => {
+card.addEventListener("touchstart", () => {
     header.textContent = introduceSelf;
     card.innerHTML = cardFront;
     card.className = "card";
