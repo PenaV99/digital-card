@@ -20,7 +20,7 @@ body {
 
 .card {
     width: 450px;
-    margin: 160px auto;
+    margin: 100px auto;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -36,7 +36,7 @@ body {
 
 .back {
     width: 450px;
-    margin: 100px auto;
+    margin: 100px auto 70px auto;
     padding: 20px;
     display: block;
     text-align: center;
@@ -44,9 +44,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
     border-bottom: 10px solid #5e548e;
-    border-left: 8px solid #e0e1dd;
-    border-top: 4px solid #000;
-    box-shadow: 0px 0px 20px gold;
+    border-top: 8px solid #5e548e;
+    border-left: 8px solid #5e548e;
+    box-shadow: 0px 0px 0px 100px #01161e;
+    border-right: 8px solid #5e548e;
 }
 .back img {
     width: 60px;
@@ -63,16 +64,17 @@ body {
 /* Mini Portfolio */
 .section {
     width: 100%;
+    height: 100%;
     background-color: #6d3b47;
     font-size: large;
-    height: 100%;
 }
 
 .skills-section {
     margin: auto;
     display: block;
     border: 2px solid white;
-    width: 80%;
+    box-shadow: 10px 10px 20px;
+    width: 90%;
     color: #fff;   
 }
 .skills-section span {
@@ -80,13 +82,15 @@ body {
 }
 .services-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .service {
-    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
 }
-
-
+.service img {
+    width: 100px;
+}
 
 
 
