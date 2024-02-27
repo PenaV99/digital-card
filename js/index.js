@@ -35,7 +35,7 @@ card.addEventListener("mouseleave", () => {
 
 //typing effect 
 const encourageElement = document.getElementById("encouraging-text");
-const encouragement = ["get started on the web", "handle SEO", "get more clicks", "be creative"]; // The text
+const encouragement = [ "get started on the web", "handle SEO", "get more clicks", "be creative"]; // The text
 const typingSpeed = 65; // Corrected variable name
 
 let currentTextIndex = 0; // Initialize the index
