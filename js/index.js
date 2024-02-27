@@ -31,15 +31,35 @@ card.addEventListener("mouseleave", () => {
 });
 
 //typing effect 
-let i = 0;
-let txt = "get started on the web?"; // The text
-var speed = 50;
+const encourageElement = document.getElementById("encouraging-text");
+const encouragement = ["get started on the web", "handle SEO", "get more clicks", "be creative"]; // The text
+const typingSpeed = 65; // Corrected variable name
 
-function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("encouraging-text").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
+let currentTextIndex = 0; // Initialize the index
+
+function typeNextEncouragementText() {
+    const currentEncouragementText = encouragement[currentTextIndex];
+    let charIndex = 0;
+
+    function typeCharacter() {
+        if (charIndex < currentEncouragementText.length) {
+            encourageElement.textContent += currentEncouragementText.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeCharacter, typingSpeed);
+        } else {
+            // Move to the next quote
+            currentTextIndex = (currentTextIndex + 1) % encouragement.length;
+            setTimeout(clearText, 1500); // Corrected function name
+        }
     }
-  }
-  typeWriter();
+
+    typeCharacter();
+}
+
+function clearText() {
+    encourageElement.innerHTML = "";
+    setTimeout(typeNextEncouragementText, 0); // Delay before typing the next quote
+}
+
+// Start the quote rotation
+typeNextEncouragementText();
