@@ -6,7 +6,7 @@ const header = document.querySelector(".header");
 const introduceSelf = header.textContent;
 
 card.addEventListener("click", () => {
-    header.textContent = "My Pleasure";
+    header.textContent = "Have a great rest of your day!";
     card.innerHTML =  "<div class='social-buttons'>\
         <a href = ''><img src= 'images/contact/png/phone.png'></a>\
         <a href = 'mailto:vhpc24@pm.me'><img src= 'images/contact/png/email.png' /></a>\
