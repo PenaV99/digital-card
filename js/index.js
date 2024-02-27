@@ -29,3 +29,17 @@ card.addEventListener("mouseleave", () => {
     card.className = "card";
     body.className = "";
 });
+
+//typing effect 
+let i = 0;
+let txt = "get started on the web?"; // The text
+var speed = 50;
+
+function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("encouraging-text").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  typeWriter();
