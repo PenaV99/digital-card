@@ -66,13 +66,16 @@ body {
     font-size: large;
     border-top: 2px solid #6a040f;
 }
-
+.services-back {
+    color: #fdfffc;
+    margin-top: 20px;
+    border-top: 2px solid #fdfffc;
+}
 .skills-section {
     margin: auto;
     display: block;
-    box-shadow: 10px 10px 20px;
+    /* box-shadow: 10px 10px 20px; */
     width: 90%;
-    color: #11001c;
 }
 .skills-section span {
     color: #70d6ff;

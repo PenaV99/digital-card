@@ -4,6 +4,7 @@ const cardFront = card.innerHTML;
 const bodyFront = body.innerHTML;
 const header = document.querySelector(".header");
 const introduceSelf = header.textContent;
+const servicesSection = document.querySelector(".services-section");
 
 card.addEventListener("click", () => {
     header.textContent = "Have a great rest of your day!";
@@ -21,13 +22,15 @@ card.addEventListener("click", () => {
         <img src='images/treehouse.png'/></a>\
     </div>";
     card.className = "back";
-    body.className = "body-back"
+    body.className = "body-back";
+    servicesSection.className = "services-back";
 });
 card.addEventListener("mouseleave", () => {
     header.textContent = introduceSelf;
     card.innerHTML = cardFront;
     card.className = "card";
     body.className = "";
+    servicesSection.className = "services-section";
 });
 
 //typing effect 
