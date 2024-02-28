@@ -108,6 +108,8 @@ body {
     border-top: 2px solid yellowgreen;
     background-color: black;
     color: #70d6ff;
+    display: flex;
+    justify-content: center;
 } 
 .about-webinit-el {
     width: 90%;
