@@ -11,6 +11,9 @@ body {
     color: #11001c;
     text-align: center;
 }
+.card-section {
+    width: 90%;
+}
 /* Business Card */
 .body-back {
     background-color: #01161e;
@@ -71,7 +74,6 @@ body {
 }
 /* Mini Portfolio */
 .services-section {
-    width: 100%;
     height: 46%;
     font-size: large;
     border-top: 2px solid #6a040f;
@@ -92,6 +94,7 @@ body {
 .services-list {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 .service {
     display: flex;
@@ -101,9 +104,12 @@ body {
     width: 100px;
 }
 .webinit-section {
+    width: 90%;
+    height: 100vh;
     margin: auto;
-    color: #70d6ff;
+    padding: 0px 75px;
     border-top: 2px solid black;
     background-color: black;
-    height: 100vh;
-}
+    color: #70d6ff;
+
+} 
