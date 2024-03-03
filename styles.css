@@ -25,11 +25,11 @@ body {
 }
 
 .avatar {
-    width: 150px;
+    width: 40%;
 }
+
 .card {
-    width: 35.45%;
-    min-width: 400px;
+    width: 430px;
     margin: 30px auto;
     padding: 20px;
     display: flex;
@@ -59,7 +59,7 @@ body {
     border-right: 8px solid yellowgreen;
 }
 .back img {
-    width: 60px;
+    width: 6vw;
     text-align: center;
 }
 .social-buttons {
@@ -77,31 +77,35 @@ body {
 .services-section {
     font-size: large;
     border-top: 2px solid #6a040f;
+    flex-wrap: wrap;
+    margin: 0px auto;
 }
 .services-back {
     color: #fdfffc;
     margin-top: 20px;
     border-top: 2px solid #fdfffc;
+    width: 90%;
+    margin: 0px auto;
 }
 .skills-section {
-    margin: auto;
-    display: block;
-    width: 90%;
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 .skills-section span {
     color: #70d6ff;
 }
 .services-list {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.service {
-    display: flex;
-    justify-content: space-evenly;
+.service { 
+    flex: 1 300px;
 }
 .service img {
-    width: 100px;
+    width: 20vw;
 }
 .webinit-section {
     width: 100%;
@@ -114,4 +118,60 @@ body {
 } 
 .about-webinit-el {
     width: 90%;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .header { 
+        font-size: 1.3rem;
+        margin: 0px auto;
+    }
+    section {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0;
+        padding: 0;
+    }
+    .card-section {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .card, .back {
+        align-items: center;
+        width: 80%;
+        flex-direction: row;
+    }
+    /* Typography */
+    .encouraging-text {
+        width: 100vw;
+        margin: 0;
+        text-align: center;
+    }
+    h3, p , h4 {
+        font-size: .8rem;
+    }
+    nav {
+        margin: 0 auto;
+    }
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        padding: 0;
+        margin-top: 0;
+    }
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+    .webinit-section {
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
