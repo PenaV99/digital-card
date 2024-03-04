@@ -14,6 +14,7 @@ body {
 .card-section {
     width: 90%;
     margin: 0px auto;
+    height: 50vh;
 }
 /* Business Card */
 .body-back {
@@ -100,6 +101,9 @@ body {
 .skills-section span {
     color: #70d6ff;
 }
+.cheers {
+    color: gold;
+}
 .services-list {
     display: flex;
     flex-wrap: wrap;
@@ -182,7 +186,6 @@ body {
         color: #70d6ff;
     }
     .webinit-section {
-        background-color:#fdfffc;
         justify-content: flex-start;
         align-items: center;
     }
