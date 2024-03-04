@@ -8,16 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>WebInit</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ26JFKMT8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SZ26JFKMT8');
+</script>
     </head>
 <nav>
     <ul class="nav-bar">
-        <li><a href="">Home</a></li>
-        <li><a href="""></a>Portfolio</li>
+        <li><a href="home">Home</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
     </ul>
 </nav>
 <body>
-    <h1 class="header">Thanks for visiting my site. Before you go, please click my business card!</h1>
+    <h1 class="header">Thanks for visiting my site!</h1>
 <section class="card-section" id="home">
     <div class="card ">
         <img class="avatar" src="images/smaller-headshot.png"
@@ -28,16 +36,11 @@
             <h4>Dallas, Texas </h4>
         </div>
     </div>
-    <p class="encouraging-text">Think you can't <span id="encouraging-text"></span>?</p>
-    <p>Yes you can.</p>
 </section>
-<section class="services-section">
+<section class="services-section" id="services">
     <div class="skills-section">
-            <h4>
-                Hi there, I'm a web developer who loves to create awesome websites that are both <strong>beautiful and
-                    functional!</strong> I have a knack for picking the best <span>designs, color themes, typography,
-                    and content</span> that suit your vision and style. Whether you need a
-            </h4>
+        <p class="encouraging-text">Think you can't <span id="encouraging-text"></span>?</p>
+        <h3>Yes you can.</h3>
             <div class="services-list">
                 <div class="service">
                     <h3>Simple Business Website</h3>

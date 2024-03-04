@@ -8,19 +8,25 @@ const servicesSection = document.querySelector(".services-section");
 
 card.addEventListener("click", () => {
     header.textContent = "Have a great rest of your day!";
-    card.innerHTML =  "<div class='social-buttons'>\
-        <a href = ''><img src= 'images/contact/png/phone.png'></a>\
-        <a href = 'mailto:vhpc24@pm.me'><img src= 'images/contact/png/email.png' /></a>\
-        <a href = 'https://victorp.netlify.app/'><img src= 'images/contact/png/website.png' /></a>\
-    </div>\
-    <div class='social-buttons'>\
-        <a href='https://github.com/PenaV99'  target= '_blank'>\
-        <img src= 'images/github-mark/github-mark.png'></a>\
-        <a href='https://www.linkedin.com/in/victor-pena-b22077147' target= '_blank'>\
-        <img src= 'images/LinkedIn-Logos/LI-In-Bug.png'></a>\
-        <a href='https://teamtreehouse.com/profiles/victorpena2' target= '_blank'>\
-        <img src='images/treehouse.png'/></a>\
-    </div>";
+    card.innerHTML = 
+        "<h4 class ='greeting-message'>\
+                Hi there, I'm a web developer who loves to create awesome websites that are both <strong>beautiful and\
+                functional!</strong> I have a knack for picking the best <span>designs, color themes, typography,\
+                and content</span> that suit your vision and style. Whether you need \
+        </h4>\
+            <div class='social-buttons'>\
+            <a href = ''><img src= 'images/contact/png/phone.png'></a>\
+            <a href = 'mailto:vhpc24@pm.me'><img src= 'images/contact/png/email.png' /></a>\
+            <a href = 'https://victorp.netlify.app/'><img src= 'images/contact/png/website.png' /></a>\
+        </div>\
+        <div class='social-buttons'>\
+            <a href='https://github.com/PenaV99'  target= '_blank'>\
+            <img src= 'images/github-mark/github-mark.png'></a>\
+            <a href='https://www.linkedin.com/in/victor-pena-b22077147' target= '_blank'>\
+            <img src= 'images/LinkedIn-Logos/LI-In-Bug.png'></a>\
+            <a href='https://teamtreehouse.com/profiles/victorpena2' target= '_blank'>\
+            <img src='images/treehouse.png'/></a>\
+        </div>";
     card.className = "back";
     body.className = "body-back";
     servicesSection.className = "services-back";

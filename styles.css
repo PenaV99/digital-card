@@ -62,6 +62,10 @@ body {
     width: 6vw;
     text-align: center;
 }
+.greeting-message {
+    text-align: left;
+    text-shadow: 0px 0px 2px #000;
+}
 .social-buttons {
     display: flex;
     justify-content: space-evenly;
@@ -88,7 +92,7 @@ body {
     margin: 0px auto;
 }
 .skills-section {
-    margin: 0 0;
+    margin: 2em 0;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -147,30 +151,38 @@ body {
         flex-direction: row;
     }
     /* Typography */
+    .header { 
+        padding: 0 .5rem;
+        max-width: 100vw;
+    }
+    .card-section {
+        height: 60vh;
+    }
     .encouraging-text {
-        width: 100vw;
+        max-width: 100vw;
         margin: 0;
         text-align: center;
     }
     h3, p , h4 {
         font-size: .8rem;
     }
-    nav {
-        margin: 0 auto;
-    }
-    .nav-bar {
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: end;
+   .nav-bar {
+        margin: 0 0 3rem;
+        max-width: 100vw;
         padding: 0;
-        margin-top: 0;
+        background-color: #01161e;
     }
     nav li {
+        background-color: #01161e;
         width: 100%;
-        text-align: center;
+        padding: .5rem 0;
+        border-bottom: .1rem solid #fdfffc;
+    }
+    nav a {
+        color: #70d6ff;
     }
     .webinit-section {
+        background-color:#fdfffc;
         justify-content: flex-start;
         align-items: center;
     }
