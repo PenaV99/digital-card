@@ -11,7 +11,7 @@ card.addEventListener("click", () => {
     card.innerHTML = 
         "<h4 class ='greeting-message'>\
                 Hi there, I'm a web developer who loves to create awesome websites that are both <strong>beautiful and\
-                functional!</strong> I have a knack for picking the best <span>designs, color themes, typography,\
+                functional!</strong> I have a knack for picking the best <span class='highlight'>designs, color themes, typography,\
                 and content</span> that suit your vision and style. Whether you need \
         </h4>\
             <div class='social-buttons'>\
