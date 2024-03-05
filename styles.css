@@ -57,19 +57,18 @@ body {
 }
 
 .back {
-    width: 90vw;
+    width: 50vw;
     max-width: 90%;
     margin: 100px auto 70px auto;   
     padding: 20px;
     display: block;
     text-align: center;
-    background: #6a040f;
-    color: #fff;
-    border-bottom: 10px solid yellowgreen;
-    border-top: 8px solid yellowgreen;
-    border-left: 8px solid yellowgreen;
-    box-shadow: 0px 0px 10px 10px #01161e;
-    border-right: 8px solid yellowgreen;
+    background: #2a9d8f;
+    color: #fdfffc; 
+    border-bottom: 10px solid #fdfffc;
+    border-left: 8px solid #2a9d8f;
+    border-top: 4px solid #000;
+    box-shadow: 0px 0px 0px 8px #01161e;
 }
 .back img {
     width: 6vw;
@@ -97,7 +96,7 @@ body {
 }
 .services-back {
     color: #fdfffc;
-    margin-top: 20px;
+    margin-top: 50px;
     width: 90%;
     margin: 0px auto;
 }
@@ -136,7 +135,7 @@ body {
 /* Media Queries */
 @media (max-width: 480px) {
     .header { 
-        font-size: 1.3rem;
+        font-size: .5rem;
         margin: 0px auto;
     }
     section {
@@ -158,6 +157,9 @@ body {
         align-items: center;
         width: 80%;
         flex-direction: row;
+    }
+    .back {
+        margin: -35px auto 20px;
     }
     /* Typography */
     .header { 

@@ -3,16 +3,16 @@ const body = document.querySelector("body");
 const cardFront = card.innerHTML;
 const bodyFront = body.innerHTML;
 const header = document.querySelector(".header");
-const introduceSelf = header.textContent;
+const introduceSelf = header.innerHTML;
 const servicesSection = document.querySelector(".services-section");
 
 card.addEventListener("click", () => {
-    header.textContent = "Have a great rest of your day!";
+    header.textContent = "";
     card.innerHTML = 
         "<h4 class ='greeting-message'>\
                 Hi there, I'm a web developer who loves to create awesome websites that are both <strong>beautiful and\
                 functional!</strong> I have a knack for picking the best <span class='highlight'>designs, color themes, typography,\
-                and content</span> that suit your vision and style. Whether you need \
+                and content</span> that suit your style and vision.\
         </h4>\
             <div class='social-buttons'>\
             <a href = ''><img src= 'images/contact/png/phone.png'></a>\
@@ -32,7 +32,7 @@ card.addEventListener("click", () => {
     servicesSection.className = "services-back";
 });
 card.addEventListener("mouseleave", () => {
-    header.textContent = introduceSelf;
+    header.innerHTML = introduceSelf;
     card.innerHTML = cardFront;
     card.className = "card";
     body.className = "";
